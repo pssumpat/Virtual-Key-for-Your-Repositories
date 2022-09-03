@@ -25,9 +25,30 @@ public class Main
         {
 //            The first option should return the current file names in ascending order. The root directory can
 //            be either empty or contain few files or folders in it
-            File
-
-
+//            Create a File object, passing the directory path to the constructor. Use the listFiles() to retrieve
+//            an array of File objects for each file in the directory, and then call the getName() method to
+//            get the filename.
+            File f =new File("F:\\Virtual_Key_For_Your_Repositories\\src");
+            File[] listOfFiles = f.listFiles();
+            int fileCounter = 0;
+            int directoryCounter = 0;
+            for(int i =1 ; i<=listOfFiles.length;i++)
+            {
+                if(listOfFiles[i].isFile())
+                {
+                    fileCounter++;
+                    System.out.println("File "+i+". "+listOfFiles[i].getName());
+                }
+                else
+                {
+                    if(listOfFiles[i].isDirectory())
+                    {
+                        directoryCounter++;
+                        System.out.println("Directory "+i+". "+listOfFiles[i].getName());
+                    }
+                }
+            }
+            System.out.println("The root directory contains "+fileCounter+"files and "+directoryCounter+"directories");
         }
         if(input == 2)
         {
