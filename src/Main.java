@@ -1,8 +1,7 @@
+import javax.naming.Name;
 import java.io.File;
 import java.sql.SQLOutput;
-import java.util.Arrays;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import java.util.*;
 
 //    1. Code to display the welcome screen. It should display:
 //    Application name and the developer details
@@ -73,7 +72,7 @@ public class Main
 
     void option1(Main m, UserInteraction1 display)
     {
-        File f =new File("F:\\Virtual_Key_For_Your_Repositories");
+        File f =new File("G:\\");
         File[] files = f.listFiles();
         if(files.length == 0)
         {
@@ -84,7 +83,7 @@ public class Main
             int fileCounter = 0;
             int directoryCounter = 0;
             String[] Names = new String[files.length];
-            for(int i =1 ; i<files.length;i++)
+            for(int i =0 ; i<files.length;i++)
             {
                 if(files[i].isFile())
                 {
@@ -97,7 +96,9 @@ public class Main
                     Names[i] =files[i].getName();
                 }
             }
-            System.out.println(Arrays.toString(Names));
+            List<String> l = Arrays.asList(Names);
+            Collections.sort(l,String.CASE_INSENSITIVE_ORDER);
+            System.out.println(l);
             System.out.println("\nThe root directory contains "+fileCounter+" files and "+directoryCounter+" directories\n");
         }
     }
