@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c36664e0-44e7-4910-96a9-a0946a138547" name="Changes" comment="Printing file list in assending order">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c36664e0-44e7-4910-96a9-a0946a138547" name="Changes" comment="version 1.0">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662204296669</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="version 1.0">
+      <created>1662300179627</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662300179627</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +124,7 @@
     <MESSAGE value="File List" />
     <MESSAGE value="Printing File list &#10;Repetetion bug fixed &#10;Learned good thing" />
     <MESSAGE value="Printing file list in assending order" />
-    <option name="LAST_COMMIT_MESSAGE" value="Printing file list in assending order" />
+    <MESSAGE value="version 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
   </component>
 </project>
