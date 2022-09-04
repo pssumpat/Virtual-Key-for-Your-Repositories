@@ -1,17 +1,7 @@
-import javax.naming.Name;
+
 import java.io.File;
-import java.sql.SQLOutput;
 import java.util.*;
 
-//    1. Code to display the welcome screen. It should display:
-//    Application name and the developer details
-//    The details of the user interface such as options displaying the user interaction information
-//        Features to accept the user input to select one of the options listed
-//
-//    2.The first option should return the current file names in ascending order. The root directory can
-//    be either empty or contain few files or folders in it
-//
-//    3. There should be a third option to close the application
 public class Main
 {
     public static void main(String[] args)
@@ -72,11 +62,11 @@ public class Main
 
     void option1(Main m, UserInteraction1 display)
     {
-        File f =new File("G:\\");
+        File f =new File("F:\\New folder");
         File[] files = f.listFiles();
         if(files.length == 0)
         {
-            System.out.println("No files Found in Directory");
+            System.out.println("No files Found in Directory\n");
         }
         else
         {
@@ -97,9 +87,15 @@ public class Main
                 }
             }
             List<String> l = Arrays.asList(Names);
-            Collections.sort(l,String.CASE_INSENSITIVE_ORDER);
-            System.out.println(l);
+            l.sort(String.CASE_INSENSITIVE_ORDER);
             System.out.println("\nThe root directory contains "+fileCounter+" files and "+directoryCounter+" directories\n");
+            int i=1;
+            for (String s : l) {
+                System.out.println(i+". "+s);
+                i++;
+            }
+            System.out.println(" ");
+
         }
     }
 
@@ -121,7 +117,7 @@ public class Main
                     }
                     else
                     {
-                        System.out.println("\n");
+                        System.out.println(" ");
                         return;
                     }
                 }
